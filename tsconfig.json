@@ -22,7 +22,8 @@
         "target": "es2017",
         "incremental": true,
         "newLine": "LF",
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "inlineSources": true
     },
     "include": [
         "src/**/*.ts",
