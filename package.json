@@ -56,7 +56,7 @@
     "@opentelemetry/resource-detector-gcp": "^0.26.2",
     "@opentelemetry/resources": "^1.0.1",
     "@types/node": "^16.7.1",
-    "gcp-metadata": "^4.3.1"
+    "gcp-metadata": "^5.2.0"
   },
   "lint-staged": {
     "*.{ts,js}": "eslint --cache --fix"
