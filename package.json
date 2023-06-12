@@ -55,7 +55,7 @@
     "@opentelemetry/resource-detector-aws": "^1.0.3",
     "@opentelemetry/resource-detector-gcp": "^0.26.2",
     "@opentelemetry/resources": "^1.10.1",
-    "@types/node": "^16.7.1",
+    "@types/node": "^20.3.0",
     "gcp-metadata": "^5.2.0"
   },
   "lint-staged": {
