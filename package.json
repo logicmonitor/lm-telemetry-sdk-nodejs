@@ -11,9 +11,12 @@
   "scripts": {
     "test": "jest",
     "compile": "tsc",
+    "prebuild": "node .scripts/cleanse-pkg \"prepare,prebuild,postbuild\"",
     "build": "tsc --build --force",
+    "postbuild": "node .scripts/restore-pkg && cp ./README.md ./build/",
     "lint": "pretty-quick --staged && lint-staged",
     "pretty-quick": "pretty-quick",
+    "prepare": "husky install",
     "lint-check": "pretty-quick --check",
     "prerelease": "npm run lint-check && npm run test && npm run build",
     "release": "standard-version --sign",
