@@ -11,12 +11,9 @@
   "scripts": {
     "test": "jest",
     "compile": "tsc",
-    "prebuild": "node .scripts/cleanse-pkg \"prepare,prebuild,postbuild\"",
     "build": "tsc --build --force",
-    "postbuild": "node .scripts/restore-pkg && cp ./README.md ./build/",
     "lint": "pretty-quick --staged && lint-staged",
     "pretty-quick": "pretty-quick",
-    "prepare": "husky install",
     "lint-check": "pretty-quick --check",
     "prerelease": "npm run lint-check && npm run test && npm run build",
     "release": "standard-version --sign",
@@ -55,7 +52,7 @@
     "@opentelemetry/resource-detector-aws": "^1.0.3",
     "@opentelemetry/resource-detector-gcp": "^0.29.0",
     "@opentelemetry/resources": "^1.10.1",
-    "@types/node": "^16.7.1",
+    "@types/node": "^16.18.38",
     "gcp-metadata": "^5.2.0"
   },
   "lint-staged": {
